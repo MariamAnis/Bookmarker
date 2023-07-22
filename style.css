@@ -1,0 +1,48 @@
+body{
+    background-color: #F7ECDE;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    line-height: 60px;
+}
+h1::after{
+    content: '';
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    background-color: #F3C15F;
+    z-index: -1;
+    left: 0;
+    bottom: 10px;
+}
+
+h1:hover::after{
+    height: 50px;
+    transition: all 350ms ease-in;
+}
+.dashed{
+    border: 1px dashed black;
+}
+h2{
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+label{
+    font-weight: 600;
+    font-size: 18px;
+}
+.form-control:focus{
+    border-color: rgb(243, 193, 95);
+    box-shadow: 3px 3px rgba(243, 193, 95,0.5);
+}
+button{
+    background-color: #BB4120;
+   
+}
+thead{
+    background-color: #F8F9FA;
+}

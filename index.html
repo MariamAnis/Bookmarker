@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Amatic+SC:wght@400;700&family=Fasthand&family=Inter&family=Montserrat:wght@200;400;700;800&family=Noto+Sans&family=Open+Sans&family=Pacifico&family=Poppins:wght@200;300;400;800&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="head text-center col-md-12">
+            <h1 class="position-relative d-inline-block">Bookmarker</h1>
+        </div>
+        <div class="dashed mt-5"></div>
+        <div class="header text-center mt-4 col-md-12">
+            
+            <h2 class="d-inline-block"><i class="fa fa-bookmark"></i> Bookmark you favorite websites <i class="fa fa-bookmark"></i></h2>
+           
+        </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="mb-3"><i class="fa fa-book"></i>
+                Site Name</label>
+              <input type="text" class="form-control mb-3" id="name" aria-describedby="emailHelp" placeholder="Website Name">
+            </div>
+            <div class="form-group">
+              <label class="mb-3" ><i class="fa fa-link"></i> Site URL</label>
+              <input type="url" class="form-control mb-3" id="url" placeholder="Website URL">
+              
+           
+            </div>
+            <button class="btn btn-danger text-white start-50 position-relative px-5 translate-middle mt-5" type="submit" id="btn" onclick="add()">Submit</button>
+            <div class="dashed mt-5"></div>
+            <table class="table mt-5">
+                <thead>
+                  <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Website Name</th>
+                    <th scope="col">Visit</th>
+                    <th scope="col">Delete</th>
+                  </tr>
+                </thead>
+
+                <tbody id="tablerow">
+                  
+                </tbody>
+              </table>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
